@@ -1,0 +1,24 @@
+{
+  "name": "youngsunli.github.io",
+  "version": "1.0.0",
+  "description": "Docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoungsunLi/youngsunli.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Youngsun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YoungsunLi/youngsunli.github.io/issues"
+  },
+  "homepage": "https://github.com/YoungsunLi/youngsunli.github.io#readme"
+}
