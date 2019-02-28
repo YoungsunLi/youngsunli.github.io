@@ -1,2 +1,2 @@
 # youngsunli.github.io
-Blog
+Docs
