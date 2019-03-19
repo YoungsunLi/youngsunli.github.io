@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/YoungsunLi/youngsunli.github.io/issues"
   },
-  "homepage": "https://github.com/YoungsunLi/youngsunli.github.io#readme"
+  "homepage": "https://github.com/YoungsunLi/youngsunli.github.io#readme",
+  "devDependencies": {
+    "vuepress": "^0.14.10",
+    "webpack-dev-middleware": "^3.6.0"
+  }
 }
