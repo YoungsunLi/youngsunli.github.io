@@ -1,6 +1,6 @@
 module.exports = {
     base: '/',
-    title: 'Youngsun',
+    title: 'Young sun',
     description: "Youngsun's Blog",
     head: [
         'link', {
