@@ -9,9 +9,15 @@ module.exports = {
         }
     ],
     dest: './dist',
-    theme: '',
     markdown: {
         lineNumbers: true
     },
+    evergreen: true,
+    locales: {
+        '/': {
+            lang: 'zh-CN'
+        }
+    },
+    theme: '',
     themeConfig: {}
 };
