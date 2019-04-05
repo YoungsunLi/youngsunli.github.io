@@ -4,7 +4,7 @@
   "description": "Docs",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --host 0.0.0.0",
     "build": "vuepress build docs"
   },
   "repository": {
