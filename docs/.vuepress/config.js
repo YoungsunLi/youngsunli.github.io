@@ -3,10 +3,7 @@ module.exports = {
     title: 'Young sun',
     description: "Youngsun's Blog",
     head: [
-        'link', {
-            rel: 'shortcut icon',
-            href: '/favicon.ico'
-        }
+        ['link', {rel: 'icon', href: '/favicon.ico'}]
     ],
     dest: './dist',
     markdown: {
