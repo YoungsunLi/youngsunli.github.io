@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/YoungsunLi/youngsunli.github.io#readme",
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.46"
+    "vuepress": "^1.0.0-alpha.47"
   }
 }
