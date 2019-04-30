@@ -854,6 +854,13 @@
   dependencies:
     lodash.throttle "^4.1.1"
 
+"@vuepress/plugin-back-to-top@^1.0.0-alpha.47":
+  version "1.0.0-alpha.47"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.0.0-alpha.47.tgz#138262700c22c80878a36e6837bfe03a4e514580"
+  integrity sha512-02wOpaIzJqwDMMd5+22f48iOC7iz3NgAX42VOJjFvQmrFzcBMm/HMzXG0nLF0Q23Idcbs1b5Vf4UPPCgiHDZWQ==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 "@vuepress/plugin-last-updated@^1.0.0-alpha.47":
   version "1.0.0-alpha.47"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.0.0-alpha.47.tgz#ff764b8397e8184e03a8f6b13b1482ea4f3b11eb"
@@ -867,6 +874,11 @@
   integrity sha512-EzdZ9GqT2H3PzCI4Ddp8EJh0bfe9EcbgIhKnl2fK7mH5RUt7RthDstn5pOhKpAjEC+e1NvH9NGd0pPzLsa0xcQ==
   dependencies:
     nprogress "^0.2.0"
+
+"@vuepress/plugin-pagination@^1.0.0-alpha.47":
+  version "1.0.0-alpha.47"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pagination/-/plugin-pagination-1.0.0-alpha.47.tgz#8b486bf40dfcea4b2a852be70595896a909e1fc3"
+  integrity sha512-a5bubGuYFsMQNdGA+ibcZLcZxZbTqxOchhBQL7EPsuv/+5wnAMgUJI6QRcUk3K6XEj6OjABhSgHTYh3JHclFdA==
 
 "@vuepress/plugin-register-components@^1.0.0-alpha.47":
   version "1.0.0-alpha.47"
@@ -4370,6 +4382,11 @@ lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.kebabcase@^4.1.1:
   version "4.1.1"

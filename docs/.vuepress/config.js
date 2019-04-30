@@ -20,7 +20,6 @@ module.exports = {
             {text: '首页', link: '/'},
             {text: '关于', link: '/about/'},
             {text: 'GitHub', link: 'https://github.com/YoungsunLi'},
-            {text: 'Typecho站点', link: 'https://lsun.net'},
             {
                 text: '友链',
                 items: [
@@ -29,6 +28,9 @@ module.exports = {
             }
         ],
         sidebar: 'auto',
-        lastUpdated: '上次更新',
-    }
+        lastUpdated: '最后一次更新于',
+    },
+    plugins: [
+        '@vuepress/back-to-top'
+    ]
 };
