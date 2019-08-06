@@ -19,11 +19,16 @@ module.exports = {
         nav: [
             {text: '首页', link: '/'},
             {text: '关于', link: '/about/'},
-            {text: 'GitHub', link: 'https://github.com/YoungsunLi'},
             {
-                text: '友链',
+                text: '认识的人',
                 items: [
                     {text: '罗东荣的博客', link: 'http://sinlo.net'}
+                ]
+            },
+            {
+                text: '做过的事',
+                items: [
+                    {text: 'GitHub', link: 'https://github.com/YoungsunLi'},
                 ]
             }
         ],
