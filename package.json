@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/YoungsunLi/youngsunli.github.io#readme",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "1.0.3",
-    "vuepress": "1.0.3"
+    "vuepress": "1.3.1"
   }
 }

@@ -34,8 +34,5 @@ module.exports = {
         ],
         sidebar: 'auto',
         lastUpdated: '最后一次更新于',
-    },
-    plugins: [
-        '@vuepress/back-to-top'
-    ]
+    }
 };
