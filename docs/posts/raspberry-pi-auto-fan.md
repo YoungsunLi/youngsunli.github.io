@@ -126,8 +126,8 @@ E-发射极、B-基极、C-集电极.
 
 
 #### 上机效果图
-![上级效果](../img/raspberry-pi-auto-fan_6.jpg)
-![上级效果](../img/raspberry-pi-auto-fan_5.jpg)
+![上机效果](../img/raspberry-pi-auto-fan_6.jpg)
+![上机效果](../img/raspberry-pi-auto-fan_5.jpg)
 
 ### 运行温控程序 auto_fan.py
 在你创建该程序的目录下执行命令: `python auto_fan.py`
