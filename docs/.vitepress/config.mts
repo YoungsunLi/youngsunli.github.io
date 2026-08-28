@@ -58,6 +58,7 @@ export default defineConfig({
         {
           text: '文章',
           items: [
+            { text: '迷你 USB HUB 切换器', link: '/posts/usb-hub-switcher/' },
             { text: '树莓派温控散热风扇', link: '/posts/raspberry-pi-auto-fan/' },
             { text: 'AMD Ryzen 启动 Android Studio Emulator 虚拟机', link: '/posts/amd-android-emulator/' },
             { text: 'Vue + Electron 混合开发并使用 Node.js 遇到的一个坑', link: '/posts/vue-electron-nodejs/' },
