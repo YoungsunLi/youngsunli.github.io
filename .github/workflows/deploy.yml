@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 博客与主题并排检出，还原 package.json 中 file:../vuepress-theme-concise 的相对路径
+      # 博客与主题并排检出，还原 package.json 中 file:../vitepress-theme-concise 的相对路径
       - name: Checkout blog
         uses: actions/checkout@v4
         with:
@@ -32,8 +32,8 @@ jobs:
       - name: Checkout theme
         uses: actions/checkout@v4
         with:
-          repository: YoungsunLi/vuepress-theme-concise
-          path: vuepress-theme-concise
+          repository: YoungsunLi/vitepress-theme-concise
+          path: vitepress-theme-concise
 
       - uses: actions/setup-node@v4
         with:
@@ -43,7 +43,7 @@ jobs:
 
       # 主题以源码形式被引用，需在其目录安装依赖后才能由 Vite 编译
       - name: Install theme deps
-        working-directory: vuepress-theme-concise
+        working-directory: vitepress-theme-concise
         run: npm ci
 
       - name: Install
