@@ -41,10 +41,10 @@ jobs:
           cache: npm
           cache-dependency-path: blog/package-lock.json
 
-      # 主题以源码形式被引用，其运行时依赖需单独安装
+      # 主题以源码形式被引用，需在其目录安装依赖后才能由 Vite 编译
       - name: Install theme deps
         working-directory: vuepress-theme-concise
-        run: npm ci --omit=dev
+        run: npm ci
 
       - name: Install
         working-directory: blog

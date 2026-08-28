@@ -22,6 +22,8 @@ export default defineConfig({
 
   vite: {
     ssr: { noExternal: ['vitepress-theme-concise'] },
+    // 主题以源码形式引用，与博客各有一份依赖，需统一到同一实例
+    resolve: { dedupe: ['vue', 'vitepress'] },
     server: {
       // dev 与 build 并行时会争用 .temp，Windows 下触发 EBUSY
       watch: {
