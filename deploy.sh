@@ -1,22 +1,17 @@
 #!/usr/bin/env bash
 
-# 确保脚本抛出遇到的错误
+# 手动部署：构建后将 dist/ 强推到 master 分支（GitHub Pages 源）
+# CNAME 与站点验证文件已放在 docs/public/，构建时自动带入 dist/
 set -e
 
-# 生成静态文件
 npm run build
 
-# 进入生成的文件夹
 cd dist
 
-# 发布到自定义域名
-echo 'lsun.net' > CNAME
-
-git init
+git init -b master
 git add -A
 git commit -m 'deploy'
 
-# 发布到 https://<USERNAME>.github.io
 git push -f git@github.com:YoungsunLi/youngsunli.github.io.git master
 
 cd -
