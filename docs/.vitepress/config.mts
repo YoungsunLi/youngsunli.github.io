@@ -58,6 +58,7 @@ export default defineConfig({
         {
           text: '文章',
           items: [
+            { text: 'ESP32-C6 GPIO 速查', link: '/posts/esp32-c6-gpio/' },
             { text: 'ESP32-C3 GPIO 速查', link: '/posts/esp32-c3-gpio/' },
             { text: '迷你 USB HUB 切换器', link: '/posts/usb-hub-switcher/' },
             { text: '树莓派温控散热风扇', link: '/posts/raspberry-pi-auto-fan/' },
