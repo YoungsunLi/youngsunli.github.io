@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'YoungsunLi',
-  description: "YoungsunLi's Blog",
+  description: "Youngsun's Blog · DEV DESIGN DIY",
   base: '/',
   outDir: '../dist',
   cleanUrls: false,
@@ -17,7 +17,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: 'Youngsun Li' }],
-    ['meta', { property: 'og:site_name', content: "YoungsunLi's Blog" }]
+    ['meta', { property: 'og:site_name', content: "Youngsun's Blog" }]
   ],
 
   vite: {
