@@ -1,6 +1,8 @@
 ---
 title: ESP32-C6 GPIO 速查
 date: 2026-08-31
+tags: [esp32, 硬件]
+description: ESP32-C6 各 GPIO 的可用性速查, 标出被 flash 占用、模组未引出和带使用前提的引脚.
 ---
 
 <script setup>

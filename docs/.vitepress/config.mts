@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitepress'
+import concise from './concise.mjs'
 
-export default defineConfig({
+export default concise.config({
   lang: 'zh-CN',
   title: 'YoungsunLi',
   description: "Youngsun's Blog · DEV DESIGN DIY",
@@ -8,11 +8,6 @@ export default defineConfig({
   outDir: '../dist',
   cleanUrls: false,
   lastUpdated: false,
-
-  // 文章 URL 形如 /posts/<slug>/
-  rewrites: {
-    'posts/:slug.md': 'posts/:slug/index.md'
-  },
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -23,7 +18,6 @@ export default defineConfig({
   ],
 
   vite: {
-    ssr: { noExternal: ['vitepress-theme-concise'] },
     // 主题以源码形式引用，与博客各有一份依赖，需统一到同一实例
     resolve: { dedupe: ['vue', 'vitepress'] },
     server: {
@@ -46,32 +40,12 @@ export default defineConfig({
   },
 
   themeConfig: {
-    concise: {
-      perPage: 10
-    },
-
     nav: [
       { text: '首页', link: '/' },
+      { text: '归档', link: '/archive/' },
+      { text: '标签', link: '/tags/' },
       { text: '关于', link: '/about/' }
     ],
-
-    sidebar: {
-      '/posts/': [
-        {
-          text: '文章',
-          items: [
-            { text: 'ESP32-S3 GPIO 速查', link: '/posts/esp32-s3-gpio/' },
-            { text: 'ESP32-C6 GPIO 速查', link: '/posts/esp32-c6-gpio/' },
-            { text: 'ESP32-C3 GPIO 速查', link: '/posts/esp32-c3-gpio/' },
-            { text: '迷你 USB HUB 切换器', link: '/posts/usb-hub-switcher/' },
-            { text: '树莓派温控散热风扇', link: '/posts/raspberry-pi-auto-fan/' },
-            { text: 'AMD Ryzen 启动 Android Studio Emulator 虚拟机', link: '/posts/amd-android-emulator/' },
-            { text: 'Vue + Electron 混合开发并使用 Node.js 遇到的一个坑', link: '/posts/vue-electron-nodejs/' },
-            { text: '新的开始, 从 Typecho 到 VuePress', link: '/posts/new-beginning/' }
-          ]
-        }
-      ]
-    },
 
     outline: { level: [2, 3], label: '本页目录' },
 
@@ -117,7 +91,6 @@ export default defineConfig({
 
     docFooter: { prev: '上一篇', next: '下一篇' },
     returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式'

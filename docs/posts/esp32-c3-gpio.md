@@ -1,6 +1,8 @@
 ---
 title: ESP32-C3 GPIO 速查
 date: 2026-08-31
+tags: [esp32, 硬件]
+description: ESP32-C3 全部 22 个 GPIO 的可用性速查, 哪些完全自由, 哪些带前提, 点击引脚看说明.
 ---
 
 <script setup>

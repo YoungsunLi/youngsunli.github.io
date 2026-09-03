@@ -28,18 +28,12 @@ npm run preview  # 本地预览构建产物
 正文……
 ```
 
-标题取正文第一个 `#`，发布日期取该文件首次提交进 git 的时间，首页卡片按日期倒序自动收录。
-需要固定日期时（例如发布后又做过修改），才在 frontmatter 里显式写：
-
-```md
----
-date: '2019-04-14'
----
-```
-
 文中图片放 `docs/img/`，用相对路径引用（如 `../img/foo.png`），构建时由 Vite 处理并加内容 hash。
 
-侧边栏目录在 `docs/.vitepress/config.mts` 的 `themeConfig.sidebar` 中维护。
+标题、日期、`tags`、`description`、`draft` 等 frontmatter 字段全部可选，含义见[主题 README](https://github.com/YoungsunLi/vitepress-theme-concise#文章格式)。
+git 首次提交时间不是真实发布日期时（如迁移来的旧文），才显式写 `date`。
+
+上一篇/下一篇、归档、标签、Atom 订阅（`/feed.xml`）都由主题从文章列表生成。
 
 ## 部署
 
@@ -56,11 +50,15 @@ date: '2019-04-14'
 ```
 docs/
 ├── .vitepress/
+│   ├── concise.mts         # 主题配置：文章目录、每页数、站点地址、评论
 │   ├── config.mts          # 站点配置
 │   └── theme/
 │       ├── index.ts        # 启用 concise 主题
 │       └── posts.data.mts  # 构建时收集文章列表
 ├── posts/                  # 文章
+├── page/[page]/            # 首页第 2 页起（/page/2/）
+├── archive/                # 归档
+├── tags/                   # 标签索引与各标签页（/tags/<tag>/）
 ├── img/                    # 文章配图
 ├── public/                 # 原样拷贝到产物根目录（CNAME、favicon、站点验证文件）
 ├── about/

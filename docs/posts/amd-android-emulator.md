@@ -1,3 +1,8 @@
+---
+tags: [开发]
+description: AMD 平台开启 Windows Hypervisor Platform 跑 Android Studio 模拟器的步骤.
+---
+
 # AMD Ryzen 启动 Android Studio Emulator 虚拟机
 
 ## 先决条件

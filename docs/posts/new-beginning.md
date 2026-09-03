@@ -1,6 +1,8 @@
 ---
 # 发布后有过修改，固定为原发布日期
 date: '2019-04-14'
+tags: [站点]
+description: 博客从 Typecho 搬到 VuePress, 顺手回顾一下第一帖.
 ---
 
 # 新的开始, 从Typecho到VuePress😀

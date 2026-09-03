@@ -1,4 +1,3 @@
-import { createPostsLoader } from 'vitepress-theme-concise/loader'
+import concise from '../concise.mjs'
 
-// glob 相对本文件所在目录
-export default createPostsLoader('../../posts/*.md')
+export default concise.loader

@@ -1,3 +1,8 @@
+---
+tags: [开发]
+description: Vue + Electron 里调用 Node.js 子进程时的一个报错, 以及原因和解法.
+---
+
 # Vue + Electron 混合开发并使用 Node.js 遇到的一个坑
 
 ## 场景

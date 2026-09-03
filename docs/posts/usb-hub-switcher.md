@@ -1,5 +1,7 @@
 ---
 date: '2023-08-31'
+tags: [硬件]
+description: 2 台主机之间一键切换 4 个 USB 设备的 USB 2.0 HUB, 单侧出线, 小到能直接放桌面.
 ---
 
 # 迷你 USB HUB 切换器
