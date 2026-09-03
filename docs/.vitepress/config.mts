@@ -17,7 +17,9 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'author', content: 'Youngsun Li' }],
-    ['meta', { property: 'og:site_name', content: "Youngsun's Blog" }]
+    ['meta', { property: 'og:site_name', content: "Youngsun's Blog" }],
+    // 立创开源没有内置图标，按 VitePress 社交图标的约定用 CSS mask 上色，见下方 socialLinks
+    ['style', {}, '.vpi-social-oshwhub { --icon: url(/oshwhub-logo.png) }']
   ],
 
   vite: {
@@ -76,11 +78,10 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/YoungsunLi', ariaLabel: 'GitHub' },
       {
-        // 官方图形经 SVG mask 上色为 currentColor，随主题明暗与 hover 变化。
-        // viewBox 取图形实际边界，避免四周留白使图标显小。
-        icon: {
-          svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="7 2 38 44"><mask id="oshwhub"><image href="/oshwhub-logo.png" width="50" height="48"/></mask><rect x="7" y="2" width="38" height="44" fill="currentColor" mask="url(#oshwhub)"/></svg>'
-        },
+        // 不能用内联 SVG mask：桌面导航栏和移动端菜单各渲染一份，mask 的 id 重复，
+        // 菜单里的引用会命中被隐藏的那份，图标变成实心方块。
+        // 图标 PNG 已裁去透明边并补成正方形，随 currentColor 变色。
+        icon: 'oshwhub',
         link: 'https://oshwhub.com/youngsunli',
         ariaLabel: '立创开源'
       }
