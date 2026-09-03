@@ -38,9 +38,8 @@ git 首次提交时间不是真实发布日期时（如迁移来的旧文），�
 
 ## 部署
 
-- 自动：推送 `docs` 分支触发 `.github/workflows/deploy.yml`
-  （需先在仓库 Settings → Pages 把 Source 切成 "GitHub Actions"）
-- 手动：`./deploy.sh` —— 构建后把 `dist/` 强推到 `master` 分支
+推送 `docs` 分支触发 `.github/workflows/deploy.yml` 自动构建发布
+（需先在仓库 Settings → Pages 把 Source 切成 "GitHub Actions"）。
 
 `CNAME` 和站点验证文件放在 `docs/public/`，构建时自动进入产物，不会因重新部署丢失。
 

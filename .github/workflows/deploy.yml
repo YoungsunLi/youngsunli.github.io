@@ -1,7 +1,7 @@
 # GitHub Actions 自动部署
 #
 # 需在仓库 Settings → Pages → Build and deployment → Source 选 "GitHub Actions"。
-# 启用后推送 docs 分支即自动构建发布，master 分支不再需要保存构建产物。
+# 推送 docs 分支即自动构建发布。
 name: Deploy to GitHub Pages
 
 on:
