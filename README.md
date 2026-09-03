@@ -34,6 +34,7 @@ npm run preview  # 本地预览构建产物
 git 首次提交时间不是真实发布日期时（如迁移来的旧文），才显式写 `date`。
 
 上一篇/下一篇、归档、标签、Atom 订阅（`/feed.xml`）都由主题从文章列表生成。
+评论用 giscus，存在本仓库 Discussions 的 Announcements 分类里，每篇文章第一条评论时自动建帖。
 
 ## 部署
 
