@@ -27,6 +27,6 @@
     "vue": "^3.5.42"
   },
   "dependencies": {
-    "vitepress-theme-concise": "file:../vitepress-theme-concise"
+    "vitepress-theme-concise": "^3.0.0"
   }
 }
